@@ -2130,13 +2130,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410087039}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.27059805, y: 0.6532815, z: -0.27059805, w: 0.6532815}
   m_LocalPosition: {x: -0.17087568, y: 2.3144217, z: -0.79422444}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1399458089}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 45, y: 90, z: 0}
 --- !u!114 &410087042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11176,6 +11176,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2092480125160390444, guid: febcfcd20fb7e3743ae4c22f0e153737, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 991a0f6e80ea3c94e96ed3c41d5b69ca, type: 2}
+    - target: {fileID: 2371898095702875454, guid: febcfcd20fb7e3743ae4c22f0e153737, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.4190684
+      objectReference: {fileID: 0}
+    - target: {fileID: 2371898095702875454, guid: febcfcd20fb7e3743ae4c22f0e153737, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.229214
+      objectReference: {fileID: 0}
+    - target: {fileID: 2371898095702875454, guid: febcfcd20fb7e3743ae4c22f0e153737, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2371898095702875454, guid: febcfcd20fb7e3743ae4c22f0e153737, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.000000014901161
+      objectReference: {fileID: 0}
+    - target: {fileID: 2371898095702875454, guid: febcfcd20fb7e3743ae4c22f0e153737, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5013788515697757137, guid: febcfcd20fb7e3743ae4c22f0e153737, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f52d2f00a9cc29941950e07ad19bc6bd, type: 2}
     - target: {fileID: 6578341154261389395, guid: febcfcd20fb7e3743ae4c22f0e153737, type: 3}
       propertyPath: m_Name
       value: CentralRoom
