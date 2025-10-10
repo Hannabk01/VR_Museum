@@ -3,7 +3,12 @@ guid: ee23da631f05c524eb845b7e6aad7e78
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_SmallDisplayCase
+    second: {fileID: -857882636074372517, guid: 5074fe47e65500a4dac5647bcd0b8a73, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
