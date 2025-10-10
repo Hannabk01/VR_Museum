@@ -12223,6 +12223,26 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -15.794224
       objectReference: {fileID: 0}
+    - target: {fileID: 1469680227850942437, guid: febcfcd20fb7e3743ae4c22f0e153737, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1469680227850942437, guid: febcfcd20fb7e3743ae4c22f0e153737, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1469680227850942437, guid: febcfcd20fb7e3743ae4c22f0e153737, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1469680227850942437, guid: febcfcd20fb7e3743ae4c22f0e153737, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1469680227850942437, guid: febcfcd20fb7e3743ae4c22f0e153737, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1634955420136845617, guid: febcfcd20fb7e3743ae4c22f0e153737, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.17087568
@@ -12389,6 +12409,7 @@ PrefabInstance:
     - {fileID: 2140738434463744281, guid: febcfcd20fb7e3743ae4c22f0e153737, type: 3}
     - {fileID: 5958971397709044901, guid: febcfcd20fb7e3743ae4c22f0e153737, type: 3}
     - {fileID: 8670890538781356923, guid: febcfcd20fb7e3743ae4c22f0e153737, type: 3}
+    - {fileID: 3365170653456641275, guid: febcfcd20fb7e3743ae4c22f0e153737, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7381885856733403609, guid: febcfcd20fb7e3743ae4c22f0e153737, type: 3}
       insertIndex: 1
