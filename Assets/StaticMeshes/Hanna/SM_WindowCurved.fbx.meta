@@ -9,6 +9,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: M_WindowGlass
     second: {fileID: 2100000, guid: f52d2f00a9cc29941950e07ad19bc6bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Windowsil
+    second: {fileID: 2100000, guid: 0194f4c36e115d448b0e60f7b81f7a59, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
