@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class buttonProximityChecker : MonoBehaviour
+public class buttonPressed : MonoBehaviour
 {
     //Variables:
     [SerializeField] private GameObject button;
@@ -10,7 +10,7 @@ public class buttonProximityChecker : MonoBehaviour
     GameObject presser;
     AudioSource buttonSound;
     bool isPressed;
-    float pressedDistance = 0.1f;
+    [SerializeField] float pressedDistance = 0.01f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -30,7 +30,6 @@ public class buttonProximityChecker : MonoBehaviour
             onPress.Invoke();
             buttonSound.Play();
             isPressed = true;
-            Debug.Log("Works!");
 
         }
     }
@@ -44,14 +43,6 @@ public class buttonProximityChecker : MonoBehaviour
             onRelease.Invoke();
             isPressed = false;
         }
-    }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-      
-
     }
 
 
