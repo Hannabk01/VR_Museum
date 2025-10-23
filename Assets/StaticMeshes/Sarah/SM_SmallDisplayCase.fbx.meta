@@ -3,7 +3,12 @@ guid: 54d761549e0a9534aaec6f20885d131b
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_DisplayCase_Glass
+    second: {fileID: 2100000, guid: 65be1a27ad38c10438cf93074793e77c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
