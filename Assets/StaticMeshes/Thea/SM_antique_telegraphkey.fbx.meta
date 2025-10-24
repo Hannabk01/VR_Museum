@@ -3,7 +3,12 @@ guid: d63820020cd7a064492b013a93aa7dad
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: morsekey
+    second: {fileID: 2100000, guid: a299280677de10f4599b01836ea44aee, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

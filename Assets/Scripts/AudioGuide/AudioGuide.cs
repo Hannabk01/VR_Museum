@@ -6,6 +6,7 @@ public class AudioGuideObj
 {
     public GameObject aGGameObject;
     public AudioClip aGAudioClip;
+    public Material aGMaterial;
 }
 
 public class AudioGuide : MonoBehaviour
@@ -16,7 +17,7 @@ public class AudioGuide : MonoBehaviour
     AudioSource guideAudioSource;
     GameObject pointingAtObj;
     GameObject selectedObj;
-    int selectedObjIndex;
+    int selectedObjIndex = 0;
     [SerializeField] AudioGuideObj[] audioGuideObjects;
     Material[] audioGuideObjMaterials;
 
@@ -30,24 +31,25 @@ public class AudioGuide : MonoBehaviour
         audioGuideObjMaterials = new Material[audioGuideObjects.Length];
         for (int i = 0; i < audioGuideObjects.Length; i++)
         {
-            audioGuideObjMaterials[i] = audioGuideObjects[i].aGGameObject.GetComponent<MeshRenderer>().material;
+            //audioGuideObjMaterials[i] = audioGuideObjects[i].aGGameObject.GetComponent<MeshRenderer>().material;
+            audioGuideObjMaterials[i] = audioGuideObjects[i].aGMaterial;
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Jump"))
+        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
         {
             laserObj.SetActive(true);
             UpdateSelectMaterials();
         }
-        if (Input.GetButton("Jump"))
+        if (OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger))
         {
             GetObjectLaserPointer();
             
         }
-        if (Input.GetButtonUp("Jump"))
+        if (OVRInput.GetUp(OVRInput.Button.PrimaryIndexTrigger))
         {
             PlaySelectedAudio();
             DeselectMaterials();
@@ -67,12 +69,14 @@ public class AudioGuide : MonoBehaviour
             {
                 
                 pointingAtObj = hit.transform.gameObject;
+                selectedObjIndex = 0;
                 for (int i = 0; i < audioGuideObjects.Length; i++)
                 {
+                    
                     if (pointingAtObj == audioGuideObjects[i].aGGameObject)
                     {
                         selectedObj = hit.transform.gameObject;
-                        selectedObjIndex = i;
+                        selectedObjIndex = i+1;
                         guideAudioSource.clip = audioGuideObjects[i].aGAudioClip;
                     }
                 }
@@ -84,6 +88,7 @@ public class AudioGuide : MonoBehaviour
             laserLine.SetPosition(0, gameObject.transform.position);
             laserLine.SetPosition(1, gameObject.transform.position + (gameObject.transform.forward * 100));
             pointingAtObj = null;
+            selectedObjIndex = 0;
             UpdateSelectMaterials();
         }
     }
@@ -103,7 +108,7 @@ public class AudioGuide : MonoBehaviour
     {
         for (int i = 0; i < audioGuideObjMaterials.Length; i++)
         {
-            if (pointingAtObj != null && i == selectedObjIndex)
+            if (pointingAtObj != null && i == selectedObjIndex-1)
             {
                 audioGuideObjMaterials[i].SetColor("_EmissionColor", Color.red);
             }
