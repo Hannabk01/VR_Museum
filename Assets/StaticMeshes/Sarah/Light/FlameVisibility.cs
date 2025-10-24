@@ -12,7 +12,7 @@ public class FlameVisibility : MonoBehaviour
 
     private void Update()
     {
-        if (OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger))
+        if (OVRInput.Get(OVRInput.Button.Two))
         {
             if (ToggleFlameActive == false)
             {

@@ -1,0 +1,3 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Label text="&quot;Trigger&quot; to Grab Oil Lamps&#10;&quot;B&quot; to turn on Oil Lamps" style="justify-content: flex-start; align-items: stretch; color: rgb(0, 0, 0);" />
+</ui:UXML>

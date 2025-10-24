@@ -12,7 +12,7 @@ public class ToggleLight : MonoBehaviour
 
     private void Update()
     {
-        if (OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger))
+        if (OVRInput.Get(OVRInput.Button.Two))
         {
             if (ToggleLightActive == false)
             {
